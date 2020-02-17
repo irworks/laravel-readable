@@ -1,4 +1,4 @@
-# [RaggiTech] Laravel - Readable. [![Latest Stable Version](https://poser.pugx.org/raggitech/laravel-readable/v/stable)](https://packagist.org/packages/raggitech/laravel-readable) [![Total Downloads](https://poser.pugx.org/raggitech/laravel-readable/downloads)](https://packagist.org/packages/raggitech/laravel-readable) [![License](https://poser.pugx.org/raggitech/laravel-readable/license)](https://packagist.org/packages/raggitech/laravel-readable)
+# [RaggiTech] Laravel >= 6.0 - Readable. [![Latest Stable Version](https://poser.pugx.org/raggitech/laravel-readable/v/stable)](https://packagist.org/packages/raggitech/laravel-readable) [![Total Downloads](https://poser.pugx.org/raggitech/laravel-readable/downloads)](https://packagist.org/packages/raggitech/laravel-readable) [![License](https://poser.pugx.org/raggitech/laravel-readable/license)](https://packagist.org/packages/raggitech/laravel-readable)
 #### Laravel Readable provides a quick and easy functions & blade directives.
 
 - ###### Number. 				   		(1,020,304,050,607,080)
