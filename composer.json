@@ -1,0 +1,43 @@
+{
+    "name": "raggitech/laravel-readable",
+    "description": "Laravel - Readable Number (Integer|decimal) & DateTime & Time Length & File Size.",
+    "keywords": [
+        "php",
+        "laravel",
+        "human readable",
+        "readable",
+        "raggitech"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Moamen Eltouny",
+            "email": "support@raggitech.com",
+            "homepage": "https://raggitech.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2",
+        "laravel/framework": ">=6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "RaggiTech\\Laravel\\Readable\\": "src"
+        },
+        "files": [
+            "src/Helpers.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "RaggiTech\\Laravel\\Readable\\ReadableServiceProvider"
+            ],
+            "aliases": {
+                "Readable": "RaggiTech\\Laravel\\Readable\\Readable"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
