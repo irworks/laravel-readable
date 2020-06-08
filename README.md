@@ -51,7 +51,7 @@ $ composer require raggitech/laravel-readable
 
 
 <a name="ReadableNumber"></a>
-##### ReadableNumber (int $number)
+##### ReadableNumber (int $number, string $delimiter = ',')
 ###### 1,020,304,050,607,080
 
 
@@ -65,7 +65,7 @@ $ composer require raggitech/laravel-readable
 
 
 <a name="ReadableDecimal"></a>
-##### ReadableDecimal ($number, int $decimals = 2)
+##### ReadableDecimal ($number, int $decimals = 2, , string $point = '.', string $delimiter = ',')
 ###### 60,708.54
 
 
