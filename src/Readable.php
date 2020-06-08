@@ -18,9 +18,9 @@ class Readable
      * @param int $input
      * @return string
      **/
-    public static function getNumber(int $input): string
+    public static function getNumber(int $input, string $delimiter = ','): string
     {
-        return number_format($input);
+        return number_format($input, 0, '.', $delimiter);
     }
 
     /**
@@ -81,11 +81,11 @@ class Readable
      * @param int $decimals
      * @return string
      **/
-    public static function getDecimal($input, int $decimals = 2): ?string
+    public static function getDecimal($input, int $decimals = 2, string $point = '.', string $delimiter = ','): ?string
     {
         if (!in_array(gettype($input), ['integer', 'double', 'float', 'string'])) throw new TypeError("Wrong Input Type.");
 
-        return number_format($input, $decimals);
+        return number_format($input, $decimals, $point, $delimiter);
     }
 
     // DATE & TIME

@@ -8,9 +8,9 @@ use RaggiTech\Laravel\Readable\Readable;
  * @param int $input
  * @return string
  **/
-function ReadableNumber(int $input): string
+function ReadableNumber(int $input, string $delimiter = ','): string
 {
-    return Readable::getNumber($input);
+    return Readable::getNumber($input, $delimiter);
 }
 
 /**
@@ -33,9 +33,9 @@ function ReadableHumanNumber(int $input, bool $showDecimal = false, int $decimal
  * @param int $decimals
  * @return string
  **/
-function ReadableDecimal($input, int $decimals = 2): ?string
+function ReadableDecimal($input, int $decimals = 2, string $point = '.', string $delimiter = ','): ?string
 {
-    return Readable::getDecimal($input, $decimals);
+    return Readable::getDecimal($input, $decimals, $point, $delimiter);
 }
 
 // DATE & TIME
