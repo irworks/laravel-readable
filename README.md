@@ -4,6 +4,8 @@
 
 - ###### Number. 				   		(1,020,304,050,607,080)
 
+- ###### NumberToString. 	       ( seven thousand seven hundred twenty-one )
+
 - ###### HumanNumber.  	    	( 77K  ||  77.4K  ||  77.37K )
 
 - ###### Decimal. 					  	 ( 60,708.547 )
@@ -40,6 +42,7 @@ $ composer require raggitech/laravel-readable
 
 **Readable has the following methods & directives:**
 - [ReadableNumber()](#ReadableNumber)
+- [ReadableNumberToString()](#ReadableNumberToString)
 - [ReadableHumanNumber()](#ReadableHumanNumber)
 - [ReadableDecimal()](#ReadableDecimal)
 - [ReadableDate()](#ReadableDate)
@@ -54,6 +57,14 @@ $ composer require raggitech/laravel-readable
 <a name="ReadableNumber"></a>
 ##### ReadableNumber (int $number, string $delimiter = ',')
 ###### 1,020,304,050,607,080
+
+
+
+
+<a name="ReadableNumberToString"></a>
+##### ReadableNumberToString($input, string $lang = 'en')
+###### EN => seven thousand seven hundred twenty-one
+###### AR => سبعة آلاف و سبعة مائة و واحد و عشرون
 
 
 
