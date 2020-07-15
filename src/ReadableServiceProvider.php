@@ -38,6 +38,10 @@ class ReadableServiceProvider extends ServiceProvider
             return "<?php echo RaggiTech\Laravel\Readable\Readable::getHumanNumber($data); ?>";
         });
 
+        Blade::directive($n . 'NumberToString', function ($data) {
+            return "<?php echo RaggiTech\Laravel\Readable\Readable::getNumberToString($data); ?>";
+        });
+
         Blade::directive($n . 'Decimal', function ($data) {
             return "<?php echo RaggiTech\Laravel\Readable\Readable::getDecimal($data); ?>";
         });

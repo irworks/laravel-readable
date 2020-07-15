@@ -16,6 +16,18 @@ function ReadableNumber(int $input, string $delimiter = ','): string
 /**
  * Get Readable Social Number
  *
+ * @param int|double|float $input
+ * @param string $lang
+ * @return string
+ **/
+function ReadableNumberToString($input, string $lang = 'en'): string
+{
+    return Readable::getNumberToString($input, $lang);
+}
+
+/**
+ * Get Readable Social Number
+ *
  * @param int $input
  * @param bool $showDecimal
  * @param int $decimals

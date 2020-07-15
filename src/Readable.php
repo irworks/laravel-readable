@@ -75,6 +75,21 @@ class Readable
     }
 
     /**
+     * Get Readable String of Number
+     *
+     * @param int|double|float $input
+     * @param string $lang
+     * @return string
+     **/
+    public static function getNumberToString($input, string $lang = 'en'): string
+    {
+        if (!in_array(gettype($input), ['integer', 'double', 'float'])) throw new TypeError("Wrong Input Type.");
+
+        $digit = new \NumberFormatter($lang, \NumberFormatter::SPELLOUT);
+        return $digit->format($input);
+    }
+
+    /**
      * Get Readable Decimal Number
      *
      * @param int $input
