@@ -240,18 +240,18 @@ class Readable
      * Get Readable File Size
      *
      * @param int $bytes
+     * @param bool $decimal
      * @return string
-     **/
-    public static function getSize(int $bytes): ?string
+     */
+    public static function getSize(int $bytes, bool $decimal = true): ?string
     {
         if ($bytes <= 0) return null;
+        $calcBase = $decimal ? 1000 : 1024;
 
         $bytes = (int) $bytes;
-        $base = log($bytes) / log(1024);
-        $suffixes = [
-            'B', 'KB', 'MB', 'GB', 'TB'
-        ];
+        $base = log($bytes) / log($calcBase);
+        $suffixes = $decimal ? ['B', 'kB', 'MB', 'GB', 'TB'] : ['B', 'KiB', 'MiB', 'GiB', 'TiB'];
 
-        return round(pow(1024, $base - floor($base)), 2) . ' ' . $suffixes[floor($base)];
+        return round(pow($calcBase, $base - floor($base)), 2) . ' ' . $suffixes[floor($base)];
     }
 }
